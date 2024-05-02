@@ -1,9 +1,12 @@
 import useTheme from "./hooks/use-theme";
+import { NavBar } from "./components/navbar/navbar";
 
 export const App = () => {
-  const { darkMode, toggleDarkMode } = useTheme();
+  const { darkMode } = useTheme();
 
   return (
-    <button onClick={toggleDarkMode}>{darkMode ? "Dark" : "Light"}</button>
+    <div className={`${darkMode ? "dark" : ""}`}>
+      <NavBar></NavBar>
+    </div>
   );
 };
