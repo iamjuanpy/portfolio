@@ -1,6 +1,6 @@
 export const NavbarLogo = () => {
   return (
-    <h1 className="font-bold text-lg text-green-500 dark:text-green-400 transition-colors">
+    <h1 className="font-semibold text-lg text-lime-500 select-none">
       juan pablo sumski
     </h1>
   );

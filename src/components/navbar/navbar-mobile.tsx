@@ -30,7 +30,7 @@ export const NavbarMobile: React.FC = () => {
     <>
       <Button className="sm:hidden" onClick={toggleMenu}>
         <svg
-          className="h-6 w-6 text-gray-800 dark:text-gray-100 stroke-current fill-current transition-colors"
+          className="h-6 w-6 text-zinc-800 dark:text-zinc-100 stroke-current fill-current transition-colors"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           stroke="none"
@@ -43,17 +43,20 @@ export const NavbarMobile: React.FC = () => {
         </svg>
       </Button>
       {open && (
-        <div className="absolute sm:hidden left-0 right-0 top-20 z-[100] w-screen p-2 flex flex-col justify-center gap-2 border-t-2 bg-gray-100 dark:bg-gray-800 transition-all">
-          <NavbarLink link="/" onClick={toggleMenu}>
+        <nav className="absolute sm:hidden left-0 right-0 top-20 z-[99] w-screen p-2 flex flex-col justify-center gap-2 border-t-2 bg-zinc-100 dark:bg-zinc-800 transition-all animate-fade-in-down animate-duration-slower">
+          <NavbarLink to="home" onClick={toggleMenu}>
             home
           </NavbarLink>
-          <NavbarLink link="/" onClick={toggleMenu}>
+          <NavbarLink to="about" onClick={toggleMenu}>
             about me
           </NavbarLink>
-          <NavbarLink link="/" onClick={toggleMenu}>
+          <NavbarLink to="projects" onClick={toggleMenu}>
             projects
           </NavbarLink>
-        </div>
+          <NavbarLink to="contact" onClick={toggleMenu}>
+            contact me
+          </NavbarLink>
+        </nav>
       )}
     </>
   );

@@ -1,21 +1,28 @@
 import { ReactNode } from "react";
+import { Link } from "react-scroll";
 
 type NavbarLinkProps = {
-  link: string;
+  to: string;
   onClick?: () => void;
   children?: ReactNode;
 };
 
 export const NavbarLink: React.FC<NavbarLinkProps> = ({
-  link,
+  to,
   onClick,
   children,
 }) => {
   return (
-    <a className="m-auto" href={link} onClick={onClick}>
-      <span className="text-gray-800 dark:text-gray-100 transition-color font-semibold hover:font-bold p-2">
+    <Link
+      className="m-auto cursor-pointer"
+      to={to}
+      onClick={onClick}
+      smooth={true}
+      offset={-150}
+    >
+      <span className="text-zinc-800 dark:text-zinc-100 transition-color font-medium hover:font-bold p-2 select-none">
         {children}
       </span>
-    </a>
+    </Link>
   );
 };

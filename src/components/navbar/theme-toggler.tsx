@@ -6,7 +6,7 @@ export const ThemeToggler = () => {
   return (
     <Button onClick={toggleDarkMode}>
       <svg
-        className="scale-0 h-6 w-6 text-gray-100 stroke-current transition-all dark:scale-100"
+        className="scale-0 h-6 w-6 text-zinc-100 stroke-current transition-all dark:scale-100"
         fill="none"
         height="35"
         strokeLinecap="round"
@@ -20,7 +20,7 @@ export const ThemeToggler = () => {
         <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
       </svg>
       <svg
-        className="absolute scale-100 h-6 w-6 text-gray-800 stroke-current transition-all dark:scale-0"
+        className="absolute scale-100 h-6 w-6 text-zinc-800 stroke-current transition-all dark:scale-0"
         fill="none"
         height="35"
         strokeLinecap="round"
