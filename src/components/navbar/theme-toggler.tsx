@@ -1,5 +1,5 @@
 import useTheme from "../../hooks/use-theme";
-import { Button } from "../button";
+import { Button } from "../ui/button";
 
 export const ThemeToggler = () => {
   const { toggleDarkMode } = useTheme();
