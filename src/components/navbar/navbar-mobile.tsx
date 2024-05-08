@@ -28,7 +28,11 @@ export const NavbarMobile: React.FC = () => {
 
   return (
     <>
-      <Button className="sm:hidden" onClick={toggleMenu}>
+      <Button
+        className="sm:hidden"
+        onClick={toggleMenu}
+        accessName="Toggle NavBar"
+      >
         <svg
           className="h-6 w-6 text-zinc-800 dark:text-zinc-100 stroke-current fill-current transition-colors"
           xmlns="http://www.w3.org/2000/svg"

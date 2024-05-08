@@ -23,6 +23,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <img
         className={`rounded-md aspect-video md:max-h-[225px] w-full bg-no-repeat object-cover`}
         src={image}
+        alt={`Project ${title} image`}
+        title={title}
       />
       <p className="text-xl font-bold text-center text-zinc-800 dark:text-zinc-100">
         {title}

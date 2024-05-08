@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 export const ThemeToggler = () => {
   const { toggleDarkMode } = useTheme();
   return (
-    <Button onClick={toggleDarkMode}>
+    <Button onClick={toggleDarkMode} accessName="Toggle Dark Mode">
       <svg
         className="scale-0 h-6 w-6 text-zinc-100 stroke-current transition-all dark:scale-100"
         fill="none"
