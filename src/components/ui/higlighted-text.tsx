@@ -7,5 +7,5 @@ type HighlightedTextProps = {
 export const HighlightedText: React.FC<HighlightedTextProps> = ({
   children,
 }) => {
-  return <span className="text-lime-500 font-semibold">{children}</span>;
+  return <span className="text-lime-600 font-semibold">{children}</span>;
 };

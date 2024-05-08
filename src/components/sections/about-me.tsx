@@ -6,11 +6,11 @@ export const AboutMe = () => {
   return (
     <section
       id="about"
-      className="bg-zinc-100 dark:bg-zinc-700 transition-colors h-full"
+      className="bg-zinc-100 dark:bg-zinc-700 transition-colors h-full z-10"
     >
-      <div className="flex flex-col-reverse p-8 sm:px-0 gap-4 m-auto sm:container h-full sm:flex-row">
+      <div className="flex flex-col-reverse p-4 sm:px-0 gap-4 m-auto sm:container h-full sm:flex-row">
         <div className="flex flex-col gap-4 ml-auto">
-          <h1 className="text-5xl font-semibold sm:text-6xl text-lime-500 animate-fade-in-left animate-duration-700 animate-delay-200 text-right w-full">
+          <h1 className="text-5xl font-semibold sm:text-6xl text-lime-600 animate-fade-in-left animate-duration-700 animate-delay-200 text-right w-full">
             About Me
           </h1>
           <p className="sm:text-lg text-zinc-800 dark:text-zinc-100 w-full sm:text-right transition-colors">
@@ -36,7 +36,7 @@ export const AboutMe = () => {
           <div className="flex flex-row flex-wrap sm:justify-end gap-2 pt-2">
             <Box>
               <svg
-                className="text-lime-500 fill-current stroke-current"
+                className="text-lime-600 fill-current stroke-current"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
@@ -47,7 +47,7 @@ export const AboutMe = () => {
             </Box>
             <Box>
               <svg
-                className="text-lime-500 fill-current stroke-current dark:stroke-none"
+                className="text-lime-600 fill-current stroke-current dark:stroke-none"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
@@ -59,7 +59,7 @@ export const AboutMe = () => {
             </Box>
             <Box>
               <svg
-                className="text-lime-500 fill-current stroke-current stroke-1"
+                className="text-lime-600 fill-current stroke-current stroke-1"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
@@ -70,7 +70,7 @@ export const AboutMe = () => {
             </Box>
             <Box>
               <svg
-                className="text-lime-500 fill-current"
+                className="text-lime-600 fill-current"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
@@ -81,7 +81,7 @@ export const AboutMe = () => {
             </Box>
             <Box>
               <svg
-                className="text-lime-500 fill-current"
+                className="text-lime-600 fill-current"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
@@ -92,7 +92,7 @@ export const AboutMe = () => {
             </Box>
             <Box>
               <svg
-                className="text-lime-500 fill-current"
+                className="text-lime-600 fill-current"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
@@ -103,7 +103,7 @@ export const AboutMe = () => {
             </Box>
             <Box>
               <svg
-                className="text-lime-500 fill-current"
+                className="text-lime-600 fill-current"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"

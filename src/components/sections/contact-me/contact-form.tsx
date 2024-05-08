@@ -4,7 +4,7 @@ export const ContactForm = () => {
   const [state, handleSubmit] = useForm(import.meta.env.VITE_FORM_API);
   return (
     <form
-      className="flex flex-col w-[350px] gap-2 m-auto sm:ml-0 sm:mr-auto"
+      className="flex flex-col w-full max-w-[350px] gap-2 m-auto sm:ml-0 sm:mr-auto"
       onSubmit={handleSubmit}
     >
       <div className="flex flex-col">
@@ -18,7 +18,7 @@ export const ContactForm = () => {
           type="email"
           id="email"
           name="email"
-          className="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm rounded-md focus:ring-lime-500 focus:border-lime-500 block w-full p-2 dark:bg-zinc-600 dark:border-zinc-500 dark:placeholder-zinc-400 dark:text-zinc-50 dark:focus:ring-lime-500 dark:focus:border-lime-500 focus:outline-none"
+          className="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm rounded-md focus:ring-lime-500 focus:border-lime-500 block w-full p-2 dark:bg-zinc-600 dark:border-zinc-500 dark:placeholder-zinc-400 dark:text-zinc-50 dark:focus:ring-lime-500 dark:focus:border-lime-500 focus:outline-none transition-colors"
           placeholder="your@email.com"
           required
         />
@@ -35,7 +35,7 @@ export const ContactForm = () => {
         <textarea
           id="message"
           name="message"
-          className="resize-none h-20 bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm rounded-md focus:ring-lime-500 focus:border-lime-500 block w-full p-2 dark:bg-zinc-600 dark:border-zinc-500 dark:placeholder-zinc-400 dark:text-zinc-50 dark:focus:ring-lime-500 dark:focus:border-lime-500 focus:outline-none"
+          className="resize-none h-20 bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm rounded-md focus:ring-lime-500 focus:border-lime-500 block w-full p-2 dark:bg-zinc-600 dark:border-zinc-500 dark:placeholder-zinc-400 dark:text-zinc-50 dark:focus:ring-lime-500 dark:focus:border-lime-500 focus:outline-none transition-colors"
           placeholder="Your message goes here"
           required
         />
@@ -47,7 +47,7 @@ export const ContactForm = () => {
         />
       </div>
       <button
-        className="align-middle font-semibold w-full h-fit p-2 rounded-md bg-lime-500 hover:bg-lime-400 text-zinc-100 dark:text-zinc-800 transition-all"
+        className="align-middle font-semibold w-full h-fit p-2 rounded-md bg-lime-600 hover:bg-lime-500 text-zinc-100 dark:text-zinc-800 transition-all"
         type="submit"
         disabled={state.submitting}
       >

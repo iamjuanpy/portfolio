@@ -14,7 +14,7 @@ export const Button: React.FC<ButtonProps> = ({
   coloured,
 }) => {
   const background = coloured
-    ? "bg-lime-500 hover:bg-lime-400"
+    ? "bg-lime-600 hover:bg-lime-500"
     : "hover:bg-zinc-300 hover:dark:bg-zinc-900";
 
   const text = "text-zinc-100 dark:text-zinc-800";

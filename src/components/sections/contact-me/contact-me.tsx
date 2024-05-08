@@ -8,8 +8,8 @@ export const ContactMe = () => {
       id="contact"
       className="bg-zinc-100 dark:bg-zinc-700 transition-colors"
     >
-      <div className="flex flex-col p-8 sm:px-0 m-auto sm:container gap-4">
-        <h1 className="text-5xl font-semibold sm:text-6xl text-lime-500 animate-fade-in-down animate-duration-700 animate-delay-900 text-center w-full">
+      <div className="flex flex-col p-4 sm:px-0 m-auto sm:container gap-4">
+        <h1 className="text-5xl font-semibold sm:text-6xl text-lime-600 animate-fade-in-down animate-duration-700 animate-delay-900 text-center w-full">
           Contact Me
         </h1>{" "}
         <p className="sm:text-lg text-zinc-800 dark:text-zinc-100 w-full text-center transition-colors">

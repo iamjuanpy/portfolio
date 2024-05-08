@@ -11,7 +11,7 @@ type ThemeContextType = {
 const getDefaultTheme = () => {
   const storedTheme = localStorage.getItem("darkMode");
 
-  return storedTheme ? JSON.parse(storedTheme) : false;
+  return storedTheme ? JSON.parse(storedTheme) : true;
 };
 
 export const ThemeContext = createContext<ThemeContextType | undefined>(

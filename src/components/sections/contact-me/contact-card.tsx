@@ -15,7 +15,7 @@ export const ContactCard: React.FC<ContactCardProps> = ({
 }) => {
   return (
     <a
-      className="flex flex-row rounded-md gap-2 p-2 bg-lime-500 w-[350px] hover:bg-lime-400 m-auto"
+      className="flex flex-row rounded-md gap-2 p-2 bg-lime-600 w-screen max-w-[350px] hover:bg-lime-500 m-auto"
       href={link}
       target="_blank"
     >
