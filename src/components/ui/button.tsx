@@ -5,6 +5,7 @@ type ButtonProps = {
   onClick?: () => void;
   children?: ReactNode;
   coloured?: boolean;
+  fullSize?: boolean;
 };
 
 export const Button: React.FC<ButtonProps> = ({
@@ -12,6 +13,7 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   children,
   coloured,
+  fullSize,
 }) => {
   const background = coloured
     ? "bg-lime-600 hover:bg-lime-500"
@@ -21,7 +23,9 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`flex w-fit h-fit p-2 rounded-md ${background} ${text} transition-all ${className}`}
+      className={`flex justify-center ${
+        fullSize ? "w-full" : "w-fit"
+      } h-fit p-2 rounded-md ${background} ${text} transition-all ${className}`}
       onClick={onClick}
     >
       {children}

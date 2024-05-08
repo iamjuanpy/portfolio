@@ -4,7 +4,7 @@ import { Layout } from "./components/layout";
 import { Footer } from "./components/footer";
 import { Home } from "./components/sections/home";
 import { AboutMe } from "./components/sections/about-me";
-import { Projects } from "./components/sections/projects";
+import { Projects } from "./components/sections/projects/projects";
 import { ContactMe } from "./components/sections/contact-me/contact-me";
 
 export const App = () => {
