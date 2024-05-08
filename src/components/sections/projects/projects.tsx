@@ -7,7 +7,7 @@ export const Projects = () => {
         <h1 className="text-5xl font-semibold sm:text-6xl text-lime-600 text-center animate-fade-in-down animate-duration-700 animate-delay-800 w-full">
           My Projects
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-auto py-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 m-auto py-8">
           <ProjectCard
             title="pomJS"
             image="/pom.png"

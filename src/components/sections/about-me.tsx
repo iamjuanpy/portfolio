@@ -13,26 +13,33 @@ export const AboutMe = () => {
           <h1 className="text-5xl font-semibold sm:text-6xl text-lime-600 animate-fade-in-left animate-duration-700 animate-delay-200 text-center sm:text-right w-full">
             About Me
           </h1>
-          <p className="sm:text-lg text-zinc-800 dark:text-zinc-100 w-full sm:text-right transition-colors">
-            <HighlightedText>23 years old</HighlightedText> Software Developer
-            based in{" "}
-            <HighlightedText>
-              Bahía Blanca, Buenos Aires, Argentina
-            </HighlightedText>
-            . <br />
-            Recently got my{" "}
-            <HighlightedText>
-              Bachelor's Degree in Computer Science
-            </HighlightedText>{" "}
-            at Universidad Nacional del Sur. <br />
-            Native <HighlightedText>Spanish</HighlightedText> speaker and C1
-            level-certified in the <HighlightedText>English</HighlightedText>{" "}
-            language. <br />
-            Here are some of the <HighlightedText>
-              technologies
-            </HighlightedText>{" "}
-            I've used the most for personal projects and college tasks.
-          </p>
+          <div className="flex flex-col gap-2">
+            <p className="sm:text-lg text-zinc-800 dark:text-zinc-100 w-full sm:text-right transition-colors">
+              <HighlightedText>23 years old</HighlightedText> Software Developer
+              based in{" "}
+              <HighlightedText>
+                Bahía Blanca, Buenos Aires, Argentina
+              </HighlightedText>
+              .
+            </p>
+            <p className="sm:text-lg text-zinc-800 dark:text-zinc-100 w-full sm:text-right transition-colors">
+              Recently got my{" "}
+              <HighlightedText>
+                Bachelor's Degree in Computer Science
+              </HighlightedText>{" "}
+              at Universidad Nacional del Sur.
+            </p>
+            <p className="sm:text-lg text-zinc-800 dark:text-zinc-100 w-full sm:text-right transition-colors">
+              Native <HighlightedText>Spanish</HighlightedText> speaker and C1
+              level-certified in the <HighlightedText>English</HighlightedText>{" "}
+              language.
+            </p>
+            <p className="sm:text-lg text-zinc-800 dark:text-zinc-100 w-full sm:text-right transition-colors">
+              Here are some of the{" "}
+              <HighlightedText>technologies</HighlightedText> I've used the most
+              for personal projects and college tasks.
+            </p>
+          </div>
           <div className="flex flex-row flex-wrap sm:justify-end gap-2 pt-2">
             <Box>
               <svg
@@ -115,7 +122,7 @@ export const AboutMe = () => {
           </div>
         </div>
         <img
-          className="sm:h-[17rem] rounded-md border-zinc-400 dark:border-zinc-800 border shadow-xl transition-colors"
+          className="sm:h-[18rem] rounded-md border-zinc-400 dark:border-zinc-800 border shadow-xl transition-colors"
           src={picture}
         />
       </div>

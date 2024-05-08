@@ -27,9 +27,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <p className="text-xl font-bold text-center text-zinc-800 dark:text-zinc-100">
         {title}
       </p>
-      <span className="flex gap-1">
+      <span className="flex flex-wrap gap-1">
         {tags.map((tag) => (
-          <ProjectTag value={tag} />
+          <ProjectTag key={tag} value={tag} />
         ))}
       </span>
       <p className="text-wrap sm:text-lg text-zinc-800 dark:text-zinc-100 transition-colors">
