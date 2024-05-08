@@ -8,9 +8,9 @@ export const AboutMe = () => {
       id="about"
       className="bg-zinc-100 dark:bg-zinc-700 transition-colors h-full z-10"
     >
-      <div className="flex flex-col-reverse p-4 py-8 sm:px-0 gap-4 m-auto sm:container h-full sm:flex-row">
+      <div className="flex flex-col-reverse p-4 py-8 sm:px-0 gap-4 m-auto sm:container h-full sm:flex-row animate-fade-in-down sm:animate-fade-in-left animate-duration-700 animate-delay-700">
         <div className="flex flex-col gap-4 ml-auto">
-          <h1 className="text-5xl font-semibold sm:text-6xl text-lime-600 animate-fade-in-left animate-duration-700 animate-delay-200 text-center sm:text-right w-full">
+          <h1 className="text-5xl font-semibold sm:text-6xl text-lime-600 text-center sm:text-right w-full">
             About Me
           </h1>
           <div className="flex flex-col gap-2">

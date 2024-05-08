@@ -3,8 +3,8 @@ import { ProjectCard } from "./project-card";
 export const Projects = () => {
   return (
     <section id="projects">
-      <div className="flex flex-col p-4 py-8 sm:px-0 m-auto sm:container gap-4">
-        <h1 className="text-5xl font-semibold sm:text-6xl text-lime-600 text-center animate-fade-in-down animate-duration-700 animate-delay-800 w-full">
+      <div className="flex flex-col p-4 py-8 sm:px-0 m-auto sm:container gap-4 animate-fade-in-down animate-duration-700 animate-delay-800 ">
+        <h1 className="text-5xl font-semibold sm:text-6xl text-lime-600 text-center w-full">
           My Projects
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 m-auto py-8">
