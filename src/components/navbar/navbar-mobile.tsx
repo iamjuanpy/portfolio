@@ -47,7 +47,7 @@ export const NavbarMobile: React.FC = () => {
         </svg>
       </Button>
       {open && (
-        <nav className="absolute sm:hidden left-0 right-0 top-20 z-[99] w-screen p-2 flex flex-col justify-center gap-2 border-t-2 bg-zinc-100 dark:bg-zinc-800 transition-all animate-fade-in-down animate-duration-slower">
+        <nav className="absolute sm:hidden left-0 right-0 top-20 z-[99] p-2 flex flex-col justify-center gap-2 border-t-2 bg-zinc-100 dark:bg-zinc-800 transition-all animate-fade-in-down animate-duration-slower">
           <NavbarLink to="home" onClick={toggleMenu}>
             home
           </NavbarLink>
